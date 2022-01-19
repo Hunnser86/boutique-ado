@@ -70,6 +70,10 @@ body {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -78,11 +82,6 @@ body {
   .container {
     max-width: 80%;
   }
-
-  .header-container {
-    padding-top: 250px;
-}
-
 }
 
 /* fixed top navbar only on medium and up */
@@ -96,9 +95,8 @@ body {
     }
 
     .header-container {
-        padding-top: 250px;
+        padding-top: 164px;
     }
-    
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -109,23 +107,5 @@ body {
 
     body {
         height: calc(100vh - 116px);
-    }
-}
-@media (max-width: 411px) {
-    .header-container {
-        padding-top: 200px;
-    }
-
-    body {
-        height: calc(100vh -200px);
-    }
-}
-@media (max-width: 363px) {
-    .header-container {
-        padding-top: 250px;
-    }
-
-    body {
-        height: calc(100vh -250px);
     }
 }
